@@ -1,0 +1,3 @@
+\babel@toc {swedish}{}\relax 
+\contentsline {section}{\numberline {1}introduktion}{3}{}%
+\contentsline {subsection}{\numberline {1.1}}{3}{}%
