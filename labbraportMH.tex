@@ -11,8 +11,8 @@
 \usepackage{comment}
 \graphicspath{ {Figurer/} }
 \usetikzlibrary{shapes,backgrounds}
-\title{\textbf{Experimental Moment of Inertia}}
-\author{Alfred Petersson, Jonathan Johansson \\\\Course\\Mechanics\\ Uppsala Universitet}
+\title{\textbf{Experimental Determination of Moment of Inertia}}
+\author{Alfred Petersson, Jonathan Johansson \\\\Course\\Mechanics\\ Uppsala University}
 \date{\today}
 \begin{document}
 \maketitle 
@@ -28,6 +28,7 @@
 En väldigt kort sammanfattning av rapporten. Liten introduktion, lite om vilken metod ni
 använt och kort om resultatet. Bör inte vara längre en ett stycke långt.
 \end{comment}
+This report investigates the moment of inertia of rotating bodies using experimental measurements of angular velocity as a function of time. Linear regression was used to determine the angular acceleration from the measured data, and the results were compared for different experimental configurations. The aim was to examine how the distribution of mass affects the moment of inertia and to evaluate how well the experimental results agree with theoretical expectations.
 \section{Introduction}
 \subsection{}
 \begin{comment}
@@ -36,10 +37,7 @@ varför experimentet är intressant. En frågeställning/ett syfte ska framgå u
 rapporten ska svara på. Men den ska inte innehålla specifika resultat eller detaljerade
 förklaringar av metoden som används.
 \end{comment}
-Moment of inertia is a physical property of anything which rotates, charachterized by the resistance
-to changes in angular velocity. Since this affects how much force needs to be applied to accelerate or
-decelerate objects, knowing how to calculate anc measure it is crucial for many applications. In this study several
-means of measuring the moment of inertia practically were explored and compared with theoretical values.
+Moment of inertia is a physical property of rotating bodies and describes their resistance to changes in angular velocity. Since it affects how much torque is required to accelerate or decelerate an object, knowing how to calculate and measure it is important in many mechanical applications. In this study, several practical methods for measuring moment of inertia were explored and compared with theoretical values.
 \section{Theory/Background}
 \subsection{}
 \begin{comment}
@@ -66,6 +64,12 @@ och begynnelsehastighet v0 kan beskrivas med Ekvation 1 [3].
 Notera i exemplet ovan att Ekvation 1 avser ekvationen som har en etta inom parentes bredvid
 sig (1) och trean inom hakparentes avser källa nummer 3. Det finns flera olika sätt att
 källhänvisa och detta är bara ett exempel.
+
+\end{comment}
+
+\section{Method}
+\subsection{}
+\begin{comment}
 Metod
 -Här beskrivs de experiment som utfördes. Och de ska vara skrivet så att någon annan kan
 upprepa experimenten och få liknande resultat. Hur uppmättes de olika kvantiteterna (T.ex hur
@@ -86,10 +90,13 @@ Två exempel på hur en del av en metoden kan se ut:
 “200 g salt vägdes och 100 ml vatten mättes upp i en mätcylinder. Saltet och vattnet
 blandades i en E-kolv.”
 “30 g salt vägdes och värmdes sedan i en büchiugn i 2 h vid 200 ℃ innan det vägdes
-igen för att kunna räkna ut mängden vatten som evaporeras under uppvärmningen.”
+igen för att kunna räkna ut mängden vatten som evaporeras under uppvärmningen.”  
+    
+
+
 \end{comment}
 
-\section{Method}
+\section{Results}
 \subsection{}
 \begin{comment}
 Här presenteras datan från experimenten och den kan kommenteras men inga slutsatser dras.
@@ -111,9 +118,40 @@ förklaras.
 -Exempel på hur man INTE bör skriva i resultatet: “Figur 1 visar resultatet från
 uppsugningstestet. Tabell 1 visar uppsugningshastigheterna för tvättsvamparna A och B.”
 
-\end{comment}
 
-\section{Results}
+
+\end{comment}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{disk.png}
+    \caption{Graph from the experiment used to determine the moment of inertia of a disk. The k-value gives the angular acceleration.}
+    \label{fig:disk}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{diskring.png}
+    \caption{Graph from the experiment used to determine the moment of inertia of a disk with added weight. The k-value gives the angular acceleration.}
+    \label{fig:diskring}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{beforecolision.png}
+    \caption{Graph showing the angular speed before impact of the added weight. The k-value gives the angular acceleration.}
+    \label{fig:beforecollision}
+\end{figure}
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{aftercolision.png}
+    \caption{Graph showing the angular speed after impact of the added weight. The k-value gives the angular acceleration.}
+    \label{fig:aftercollision}
+\end{figure}
+
+
+\section{Discussion}
 \subsection{}
 \begin{comment}
 Plocka ut viktig information och värden från resultatet.
@@ -134,42 +172,14 @@ luftfuktigheten i våra mätningar. En högre luftfuktighet kan göra så att tv
 suga upp lika mycket vatten, då den redan sugit upp en del från vattnet i luften.”. Här berättar
 vi både att felkällan finns och hur den påverkar resultatet (eller hur den kan påverka
 resultatet).
-\end{comment}
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\textwidth]{disk.png}
-    \caption{Beskrivning av bilden.}
-    \label{fig:bildnamn}
-\end{figure}
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\textwidth]{diskring.png}
-    \caption{Beskrivning av bilden.}
-    \label{fig:bildnamn}
-\end{figure}
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\textwidth]{beforecolision.png}
-    \caption{Beskrivning av bilden.}
-    \label{fig:bildnamn}
-\end{figure}
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\textwidth]{aftercolision.png}
-    \caption{Beskrivning av bilden.}
-    \label{fig:bildnamn}
-\end{figure}
 
 
-\section{Diskussion}
-\subsection{}
-\begin{comment}
 (Conclusion) (Om denna rubrik inte finns med ska sammanfattningen ingå i diskussionen)
 Här sammanfattas det kort vilka slutsatser som kunde dras utifrån rapporten. I stort sett en
 sammanfattning av diskussionen. Frågeställningen ni ställde i introduktionen ska besvaras.
 \end{comment}
 
-\section{sources}
+\section{References}
 \subsection{}
 \begin{comment}
 et finns flera olika system man kan hänvisa källor efter (till exempel harvard, vancouver eller oxford
@@ -181,7 +191,7 @@ Använd ej wikipedia som källa.
 \end{comment}
 
 
-\section{Apendix}
+\section{Appendix}
 \subsection{}
 \begin{comment}
 Figurer, tabeller eller text som inte är helt nödvändig att ha uppe i rapporttexten eller som tar för
