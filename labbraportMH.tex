@@ -9,6 +9,10 @@
 \usepackage{txfonts}
 \usepackage{tikz}
 \usepackage{comment}
+\usepackage[backend=biber]{biblatex}
+
+\addbibresource{references.bib.txt}
+
 \graphicspath{ {Figurer/} }
 \usetikzlibrary{shapes,backgrounds}
 \title{\textbf{Experimental Determination of Moment of Inertia}}
@@ -44,6 +48,8 @@ means of measuring the moment of inertia practically were explored and compared 
 to determine if this was a valid means of mesuring the moment of inertia and how accurate of a method it was. 
 A second goal of the experiment was to determine the effect of impulse on a rotating system to show
 with a practical example that angular momentum is conserved in systems like this while angular kinetic energy is not.
+\newpage
+
 \section{Theory/Background}
 \subsection{}
 \begin{comment}
@@ -71,27 +77,36 @@ Notera i exemplet ovan att Ekvation 1 avser ekvationen som har en etta inom pare
 sig (1) och trean inom hakparentes avser källa nummer 3. Det finns flera olika sätt att
 källhänvisa och detta är bara ett exempel.
 \end{comment}
-To calculate with rotational movement and canot idealize the mass to a particle as often done in translational calculations,
+To calculate with rotational movement and can not idealize the mass to a particle as often done in translational calculations,
 you have to use expresions 
 giving a link between the mass of an object and how it is distributed 
-I = moment of inertia differen geometric forms will have diferent calculations 
-about its centroid being the center of the distributed mass.
-\\Using this link analogusly Newtons second law $\sum F=ma$ can be aplied for rotational movement. 
-\[\sum \tau = I\alpha \]
-$\tau$ equals torsion and $\alpha$ the angular acceleration \\\\
+$I = moment\: of \:inertia$ differen geometric forms will give diferent calculations 
+about its centroid being the center of the distributed mass.\\\\
+Examples of equations of moment of inertia
+\begin{equation}
+3+4
+\end{equation}
+
+\parencite[185]{ph}
+\\\\
+Using this link Newtons second law $\sum F=ma$ analogusly can be aplied for rotational movement. 
+\begin{equation}\sum \tau = I\alpha\end{equation}
+$\tau$ equals torsion $I$ equals moment of inertia and $\alpha$ the angular acceleration \\\\
 To calculate Torque ($\tau$) it is the distance to where the aplied Force perpendikular to the rotational center see figure (fbd) 
-\[\tau=Tr\]
+\begin{equation}\tau=Tr\end{equation}
 T is the aplied force in Newton and r is the distance to the point of perpendicular aplied force\\\\ 
 Given an expresion for $\tau=Tr$ the two formulas can be joined to 
-\[Tr=I\alpha\]
+\begin{equation}Tr=I\alpha\end{equation}
 In the case that the force is generated with a free faling weight the folowing substitutions can be made $F=mg=T$ giving the expression 
-\[mgr=I\alpha\]
+\begin{equation}mgr=I\alpha\end{equation}
+When the centroid of an object and the axes of rotation dosent aligne The Paralell axel Theorem 
+\begin{equation}I_{total}=I_{cm}+mr^2\:(r=the\,distance\,between\,axis)\end{equation}
 
 
 tourqe are given by T times the distance to the perpendicular line the force are aplied on 
-\[Tr=\tau\]
+\begin{equation}Tr=\tau\end{equation}
 
-\[I=\frac{mgr}{\alpha}+mr^2\]
+\begin{equation}I=\frac{mgr}{\alpha}+mr^2\end{equation}
 
 \section{Method}
 \subsection{}
@@ -119,7 +134,7 @@ blandades i en E-kolv.”
 igen för att kunna räkna ut mängden vatten som evaporeras under uppvärmningen.”  
 \end{comment}
 
-\[\sum F=mg-T=ma\] 
+\begin{equation}\sum F=mg-T=ma\end{equation} 
 a = the linear acceleration of the falling mass\\
 \section{Results}
 \subsection{}
@@ -215,6 +230,7 @@ texten (vanligtvis i Teori/Bakgrund avsnittet).
 Använd ej wikipedia som källa.
 \end{comment}
 
+\printbibliography
 
 \section{Appendix}
 \subsection{}

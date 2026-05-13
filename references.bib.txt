@@ -1,0 +1,7 @@
+@book{ph,
+  author = {Nordling, Carl and {\"O}sterman, Jonny},
+  title = {Physics Handbook for Science and Engineering},
+  edition = {9},
+  year = {2020},
+  publisher = {Studentlitteratur}
+}
