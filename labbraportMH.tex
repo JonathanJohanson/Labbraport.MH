@@ -141,6 +141,7 @@ For error estimation the standard deviation can be calculated to give a sense of
 $x_i$ is the experimental value, x the mean value and n the amount of data collections 
 \begin{equation} 
 S=\sqrt{\frac{\sum_{i=1}^n (x_i-x)^2}{n-1}}
+\label{deviat}
 \end{equation}
 \parencite[463]{ph}
 \newpage
@@ -210,9 +211,9 @@ förklaras.
 uppsugningstestet. Tabell 1 visar uppsugningshastigheterna för tvättsvamparna A och B.”
 \end{comment}
 
-Standard avikelser 
-experiment 2 skiva (medel 14,04 S-avikelse 0,089) skiva+ring (medel 3,022 s-avikelse0,0238)
-epreriment 3 före kolision(medel 17,53 S-avikelse 2,336) efter kolision(medel 4,095 s-avikelse 0,498)
+
+
+
 
 
 \begin{table}[H]
@@ -233,7 +234,6 @@ $r_{atachment\: point}$ & 23,75& mm& \\
 \caption{Mesurements for ring, disk and atachment point  }
 \label{tab:värden}
 \end{table}
-
 
 \begin{comment}
 * tabular → själva tabellen
@@ -275,6 +275,27 @@ fisk
     \caption{Graph showing the angular speed after impact of the added weight. The k-value gives the angular acceleration.}
     \label{fig:aftercollision}
 \end{figure}
+\begin{comment}
+Standard avikelser 
+experiment 2 skiva (medel 14,04 S-avikelse 0,089) skiva+ring (medel 3,022 s-avikelse0,0238)
+epreriment 3 före kolision(medel 17,53 S-avikelse 2,336) efter kolision(medel 4,095 s-avikelse 0,498)
+\end{comment}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c c c c}
+\hline
+Experiment & Mean  & Standard deviation \\
+\hline
+$Experimental \:I_{disk}$ & 14,04 & 0,089 &\\
+$Experimental \:I_{disk+ring}$ & 3,022 & 0,0238 &\\
+$Experimental \:L/K_{pre-impact}$ & 17,53 & 2,336 &\\
+$Experimental \:L/K_{post-impact}$ & 4,095 & 0,498 &\\
+\hline
+\end{tabular}
+\caption{Standard deviation calculated acording to equation: \eqref{deviat}}
+\label{tab:standard-dev}
+\end{table}
 
 haj
 
