@@ -27,7 +27,7 @@
 \newpage
 
 \section{Abstract}
-\subsection{}
+
 \begin{comment}
 En väldigt kort sammanfattning av rapporten. Liten introduktion, lite om vilken metod ni
 använt och kort om resultatet. Bör inte vara längre en ett stycke långt.
@@ -37,7 +37,7 @@ Linear regression was used to determine the angular acceleration from the measur
 and the results were compared for different experimental configurations. 
 The aim was to examine how the distribution of mass affects the moment of inertia and to evaluate how well the experimental results agree with theoretical expectations.
 \section{Introduction}
-\subsection{}
+
 \begin{comment}
 introduktion till varför experimenten utfördes. Läsaren ska förstå varför arbetet gjordes och
 varför experimentet är intressant. En frågeställning/ett syfte ska framgå ur introduktionen som
@@ -54,7 +54,7 @@ with a practical example that angular momentum is conserved in systems like this
 \newpage
 
 \section{Theory/Background}
-\subsection{}
+
 \begin{comment}
 samt förklaringar av ekvationer och samband som behövs för att förstå resten av rapporten.
 -Det går självklart inte att förklara exakt allt så det får bli en avvägning vad som tas med. Men
@@ -147,7 +147,7 @@ S=\sqrt{\frac{\sum_{i=1}^n (x_i-x)^2}{n-1}}
 
 
 \section{Method}
-\subsection{}
+
 \begin{comment}
 Metod
 -Här beskrivs de experiment som utfördes. Och de ska vara skrivet så att någon annan kan
@@ -183,12 +183,12 @@ Both experiments were conducted using the PASCO Capstone system with the sensor 
 \end{figure}
 
 the data was logged with angular velocity and time on the y and x axis in the Pasco system. to have controled force aplied in the system 
-a smal weight atached to the flyweel in the measuring system was used the weight wass realesed and the PASCO system recoded the event for the first 
-experiment the flyweel alone was measured five times and with an aditional weight added   
+a smal weight atached to the disk in the sensor system was used. The weight was realesed and the PASCO system recoded the event, for the first 
+experiment the flyweel alone was measured five times and with an aditional ring weight added to the system as in figure \ref{fig:labsetup}   
 
 \newpage
 \section{Results}
-\subsection{}
+
 \begin{comment}
 Här presenteras datan från experimenten och den kan kommenteras men inga slutsatser dras.
 -Använd en tabell om du presenterar mycket data så att det inte bara står i texten. Se Tabell 2
@@ -217,17 +217,24 @@ epreriment 3 före kolision(medel 17,53 S-avikelse 2,336) efter kolision(medel 4
 
 \begin{table}[H]
 \centering
-\begin{tabular}{c c c}
+\begin{tabular}{c c c c}
 \hline
-Kolumn 1 & Kolumn 2 & Kolumn 3 \\
+Entity & Value  & Unit \\
 \hline
-1 & 2 & 3 \\
-4 & 5 & 6 \\
+$m_{disk}$ & 119,63 & g &\\
+$m_{ring}$ & 457,26 & g &\\
+$m_{weight}$ & 9,66 & g &\\
+$r_{disk}$ & 47,5 & mm &\\
+$r_{ring\: outside}$ & 27 & mm &\\
+$r_{ring\: inside}$ & 38,5 & mm &\\
+$r_{atachment\: point}$ & 23,75& mm& \\
 \hline
 \end{tabular}
-\caption{Min tabell}
-\label{tab:min_tabell}
+\caption{Mesurements for ring, disk and atachment point  }
+\label{tab:värden}
 \end{table}
+
+
 \begin{comment}
 * tabular → själva tabellen
 * {c c c} → tre centrerade kolumner
@@ -272,14 +279,14 @@ fisk
 haj
 
 \section{Calculations}
-\subsection{}
+
 \begin{comment}
 ska vi ha en egen rubrik för beräkningar eller lägga dem i results 
 \end{comment}
 
 
 \section{Discussion}
-\subsection{}
+
 \begin{comment}
 Plocka ut viktig information och värden från resultatet.
 -Diskutera resultaten och dra slutsatser
@@ -307,7 +314,7 @@ sammanfattning av diskussionen. Frågeställningen ni ställde i introduktionen 
 \end{comment}
 
 \section{References}
-\subsection{}
+
 \begin{comment}
 et finns flera olika system man kan hänvisa källor efter (till exempel harvard, vancouver eller oxford
 systemen). Om det är så att ni använder laborationsinstruktionerna som källa eller något annat som är
@@ -320,7 +327,6 @@ Använd ej wikipedia som källa.
 \printbibliography
 
 \section{Appendix}
-\subsection{}
 \begin{comment}
 Figurer, tabeller eller text som inte är helt nödvändig att ha uppe i rapporttexten eller som tar för
 mycket plats kan läggas i bilagorna. Till exempel så kanske man nämner i rapporttexten att en av
