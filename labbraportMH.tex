@@ -90,15 +90,17 @@ Examples of equations of moment of inertia
 \\\\
 Equation for a circular plate
 \begin{equation}
-I_x=I_y=\frac{1}{2}I_z=m\frac{r^2}{4}
+I_x=I_y=m\frac{r^2}{2}
+\label{Iplate}
 \end{equation}
-\parencite[185]{ph}
+\parencite[342]{up}
 \\\\
 Equation for a circular ring
 \begin{equation}
-I_x=I_y=\frac{1}{4}m(r^2_1+r^2_2)
+I_x=I_y=\frac{1}{2}m(r^2_1+r^2_2)
+\label{Iring}
 \end{equation}
-\parencite[185]{ph}
+\parencite[342]{up}
 \\\\
 Using this link Newtons second law $\sum F=ma$ analogusly can be aplied for rotational movement \parencite[335]{up}. 
 \begin{equation}\sum \tau = I\alpha\end{equation}
@@ -125,15 +127,20 @@ Tourqe are given by T times the distance to the perpendicular line the force are
 \parencite[171]{ph}
 \end{comment}
 
-With the given equations a expression for the experimantal moment of inertia can be derived, taken in account that the moment of inertia are linear and can be summed the expression for the parallel theorem can be added.
-\begin{equation}I=\frac{mgr}{\alpha}+mr^2\end{equation}
+With the given equations a expression for the experimantal moment of inertia can be derived.
+\begin{equation}
+I=\frac{mgr}{\alpha}-mr^2
+\label{finalderivation}
+\end{equation}
 
 For calculations of angular mommentum $L$ and rotational energy $k_{rot}$  fomulas analogus to straight movement are used. 
 \begin{equation}
 E_{rot}=\frac{1}{2}\omega I
+\label{Erot}
 \end{equation}
 \begin{equation}
 L=I\omega    
+\label{L}
 \end{equation}    
 \parencite[181]{ph}
 \\\\
@@ -285,7 +292,7 @@ epreriment 3 före kolision(medel 17,53 S-avikelse 2,336) efter kolision(medel 4
 \centering
 \begin{tabular}{c c c c}
 \hline
-Experiment & Mean  & Standard deviation \\
+Experiment & Mean($\omega$)  & Standard deviation \\
 \hline
 $Experimental \:I_{disk}$ & 14,04 & 0,089 &\\
 $Experimental \:I_{disk+ring}$ & 3,022 & 0,0238 &\\
@@ -298,16 +305,60 @@ $Experimental \:L/K_{post-impact}$ & 4,095 & 0,498 &\\
 \end{table}
 
 haj
+\newpage
 
 \section{Calculations}
-
 \begin{comment}
 ska vi ha en egen rubrik för beräkningar eller lägga dem i results 
 \end{comment}
+Using equation:\eqref{finalderivation} the experimental moment of inertia can be calculated 
+only knowing the mass of the faling weight and the radius of the pulling disk.
+
+\begin{equation}
+I_{disk}=\frac{0,00966kg\cdot9,81\frac{m}{s^2}\cdot0,02375m}{14,04\frac{rad}{s^2}}-0,00966\cdot0,2375m^2=
+\end{equation}
+\begin{equation}
+I_{disk+ring}=\frac{0,00966kg\cdot9,81\frac{m}{s^2}\cdot0,02375m}{3,022\frac{rad}{s^2}}-0,00966\cdot0,2375m^2=
+\end{equation}
+
+To calculate the theroretical values for the disk equation: \eqref{Iplate} are used and for the disk and the ring it is combined with equation:\eqref{Iring} 
+\begin{equation}
+I_{disk}=\frac{0,11963kg\cdot0,0475^2m}{2}=
+\end{equation}
+\begin{equation}
+I_{disk+ring}=\frac{0,11963kg\cdot0,0475^2m}{2}+\frac{0,455726kg\cdot(0,027^2m+0,0385^2m)}{2}=
+\end{equation}
+\\\\
+Before calculating the kinetic energy and the angular momentum, the agular moment has t be calculated, to calculate with the paralell theorem the mean displacement are used (6,4mm). 
+\begin{equation}
+I_{before}=\frac{0,11963kg\cdot0,0475^2m}{2}=   
+\end{equation}
+\begin{equation}
+I_{after}=\frac{0,11963kg\cdot0,0475^2m}{2}+\frac{0,455726kg\cdot(0,027^2m+0,0385^2m)}{2}+\frac{0,19963kg\cdot0,0064^2m}{2}=
+\end{equation}
+
+To calculate and compare the Kineticenergy before and after the impact equation: \eqref{Erot} are used 
+\begin{equation}
+E_{disk}=\frac{17,53\frac{m}{s}\cdot I}{2}
+\end{equation}
+
+\begin{equation}
+E_{disk+ring}=\frac{4,095\frac{m}{s}\cdot I}{2}
+\end{equation}
+
+
+To calculate and compare the angular momentum before and after the impact equation: \eqref{L} are used
+\begin{equation}
+L_{disk}=I\cdot17,53
+\end{equation}
+
+\begin{equation}
+L_{disk+ring}=I\cdot4,095
+\end{equation}
+
 
 
 \section{Discussion}
-
 \begin{comment}
 Plocka ut viktig information och värden från resultatet.
 -Diskutera resultaten och dra slutsatser
