@@ -5,3 +5,11 @@
   year = {2020},
   publisher = {Studentlitteratur}
 }
+
+@book{up,
+  author = {Young, Hugh D. and Freedman, Roger A.},
+  title = {University Physics},
+  edition = {11},
+  year = {2003},
+  publisher = {Pearson}
+}

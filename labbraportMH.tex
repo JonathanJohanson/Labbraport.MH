@@ -79,42 +79,53 @@ källhänvisa och detta är bara ett exempel.
 \end{comment}
 To calculate with rotational movement and can not idealize the mass to a particle as often done in translational calculations,
 you have to use expresions 
-giving a link between the mass of an object and how it is distributed 
+giving a link between the mass of an object and how it is distributed \parencite[339]{up}
 
-$I = moment\: of \:inertia$ differen geometric forms will give diferent calculations 
+$I = moment\: of \:inertia$, different geometric forms will give diferent calculations 
 about its centroid being the center of the distributed mass.\\\\
 Examples of equations of moment of inertia
-\\
+\\\\
 Equation for a circular plate
 \begin{equation}
 I_x=I_y=\frac{1}{2}I_z=m\frac{r^2}{4}
 \end{equation}
 \parencite[185]{ph}
-\\
+\\\\
 Equation for a circular ring
 \begin{equation}
-I_x=I_y=\frac{1}{2}I_z=\frac{1}{2}mr^2
+I_x=I_y=\frac{1}{4}m(r^2_1+r^2_2)
 \end{equation}
 \parencite[185]{ph}
 \\\\
-Using this link Newtons second law $\sum F=ma$ analogusly can be aplied for rotational movement. 
+Using this link Newtons second law $\sum F=ma$ analogusly can be aplied for rotational movement \parencite[335]{up}. 
 \begin{equation}\sum \tau = I\alpha\end{equation}
+
 $\tau$ equals torsion $I$ equals moment of inertia and $\alpha$ the angular acceleration \\\\
-To calculate Torque ($\tau$) it is the distance to where the aplied Force perpendikular to the rotational center see figure (fbd) 
+
+To calculate Torque ($\tau$) it is the distance to where the aplied Force perpendikular to the rotational center.  
 \begin{equation}\tau=Tr\end{equation}
-T is the aplied force in Newton and r is the distance to the point of perpendicular aplied force\\\\ 
+\parencite[171]{ph}\\\\
+T is the aplied force in Newton and r is the distance to the point of perpendicular aplied force.\\\\ 
 Given an expresion for $\tau=Tr$ the two formulas can be joined to 
 \begin{equation}Tr=I\alpha\end{equation}
-In the case that the force is generated with a free faling weight the folowing substitutions can be made $F=mg=T$ giving the expression 
+In the case that the force is generated with a free faling weight the folowing substitutions can be made $\sum F=mg-T=ma$.  
+a = the linear acceleration of the falling mass giving the expression. 
 \begin{equation}mgr=I\alpha\end{equation}
-When the centroid of an object and the axes of rotation dosent aligne The Paralell axel Theorem 
+When the centroid of an object and the axes of rotation do not aligne The Paralell axel Theorem (Steiners's Theorem) can be used to calculate the moment of inertia.
+
 \begin{equation}I_{total}=I_{cm}+mr^2\:(r=the\,distance\,between\,axis)\end{equation}
-
-
-tourqe are given by T times the distance to the perpendicular line the force are aplied on 
+\parencite[181]{ph}
+\\\\
+\begin{comment}
+Tourqe are given by T times the distance to the perpendicular line the force are aplied on 
 \begin{equation}Tr=\tau\end{equation}
+\parencite[171]{ph}
+\end{comment}
 
+With the given equations a expression for the experimantal moment of inertia can be derived, taken in account that the moment of inertia are linear and can be summed the expression for the parallel theorem can be added.
 \begin{equation}I=\frac{mgr}{\alpha}+mr^2\end{equation}
+\newpage
+
 
 \section{Method}
 \subsection{}
@@ -142,8 +153,7 @@ blandades i en E-kolv.”
 igen för att kunna räkna ut mängden vatten som evaporeras under uppvärmningen.”  
 \end{comment}
 
-\begin{equation}\sum F=mg-T=ma\end{equation} 
-a = the linear acceleration of the falling mass\\
+
 \section{Results}
 \subsection{}
 \begin{comment}
@@ -165,25 +175,48 @@ och tabell 1 ligga under detta stycke och Ekvation 3 bör ligga i teoriavsnittet
 förklaras.
 -Exempel på hur man INTE bör skriva i resultatet: “Figur 1 visar resultatet från
 uppsugningstestet. Tabell 1 visar uppsugningshastigheterna för tvättsvamparna A och B.”
-
-
-
 \end{comment}
-\begin{figure}[h]
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c c c}
+\hline
+Kolumn 1 & Kolumn 2 & Kolumn 3 \\
+\hline
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+\hline
+\end{tabular}
+\caption{Min tabell}
+\label{tab:min_tabell}
+\end{table}
+\begin{comment}
+* tabular → själva tabellen
+* {c c c} → tre centrerade kolumner
+    * l = vänster
+    * c = centrerad
+    * r = höger
+* & separerar kolumner
+* \\ ny rad
+* \hline horisontell linje
+\end{comment}
+
+fisk
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{disk.png}
     \caption{Graph from the experiment used to determine the moment of inertia of a disk. The k-value gives the angular acceleration.}
     \label{fig:disk}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{diskring.png}
     \caption{Graph from the experiment used to determine the moment of inertia of a disk with added weight. The k-value gives the angular acceleration.}
     \label{fig:diskring}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{beforecolision.png}
     \caption{Graph showing the angular speed before impact of the added weight. The k-value gives the angular acceleration.}
@@ -191,14 +224,14 @@ uppsugningstestet. Tabell 1 visar uppsugningshastigheterna för tvättsvamparna 
 \end{figure}
 
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{aftercolision.png}
     \caption{Graph showing the angular speed after impact of the added weight. The k-value gives the angular acceleration.}
     \label{fig:aftercollision}
 \end{figure}
 
-
+haj
 \section{Discussion}
 \subsection{}
 \begin{comment}
@@ -249,9 +282,6 @@ kemikalierna hade en liten annan färg än vad den borde ha haft. Då kan man l�
 kemikalien i bilagan och hänvisa till den i texten. Läsaren måste inte se bilden, men det kan vara bra
 att ha som bilaga om någon är intresserad.
 \end{comment}
-
-\section{Contributions}
-\subsection{}
 
 
 \end{document}
