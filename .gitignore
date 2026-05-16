@@ -8,6 +8,7 @@
 *.bcf
 *.blg
 *.run.xml
+*-SAVE-ERROR
 *.synctex.gz
 *.toc
 
