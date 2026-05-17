@@ -303,16 +303,28 @@ epreriment 3 före kolision(medel 17,53 S-avikelse 2,336) efter kolision(medel 4
 \centering
 \begin{tabular}{c c c c}
 \hline
-Experiment & Mean($\omega$)  & Standard deviation \\
+Experiment & Mean($\alpha$)  & Standard deviation \\
 \hline
 $Experimental \:I_{disk}$ & 14,04 & 0,089 &\\
 $Experimental \:I_{disk+ring}$ & 3,022 & 0,0238 &\\
+\hline
+\end{tabular}
+\caption{Standard deviation calculated acording to equation: \eqref{deviat}}
+\label{tab:standard-dev1}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c c c c}
+\hline
+Experiment & Mean($\omega$)  & Standard deviation \\
+\hline
 $Experimental \:L/K_{pre-impact}$ & 17,53 & 2,336 &\\
 $Experimental \:L/K_{post-impact}$ & 4,095 & 0,498 &\\
 \hline
 \end{tabular}
 \caption{Standard deviation calculated acording to equation: \eqref{deviat}}
-\label{tab:standard-dev}
+\label{tab:standard-dev2}
 \end{table}
 
 haj
@@ -326,45 +338,62 @@ Using equation:\eqref{finalderivation} the experimental moment of inertia can be
 only knowing the mass of the faling weight and the radius of the pulling disk.
 
 \begin{equation}
-I_{disk}=\frac{0,00966kg\cdot9,81\frac{m}{s^2}\cdot0,02375m}{14,04\frac{rad}{s^2}}-0,00966\cdot0,2375m^2=
+I_{disk}=\frac{0,00966kg\cdot9,81\frac{rad}{s^2}\cdot0,02375m}{14,04\frac{rad}{s^2}}-0,00966\cdot0,02375m^2=1,548kgm^2\cdot10^{-4}
 \end{equation}
 \begin{equation}
-I_{disk+ring}=\frac{0,00966kg\cdot9,81\frac{m}{s^2}\cdot0,02375m}{3,022\frac{rad}{s^2}}-0,00966\cdot0,2375m^2=
+I_{disk+ring}=\frac{0,00966kg\cdot9,81\frac{rad}{s^2}\cdot0,02375m}{3,022\frac{rad}{s^2}}-0,00966\cdot0,02375m^2=7,393kgm^2\cdot10^{-4}
 \end{equation}
 
 To calculate the theroretical values for the disk equation: \eqref{Iplate} are used and for the disk and the ring it is combined with equation:\eqref{Iring} 
 \begin{equation}
-I_{disk}=\frac{0,11963kg\cdot0,0475^2m}{2}=
+I_{disk}=\frac{0,11963kg\cdot0,0475^2m}{2}=1,349kgm^2\cdot10^{-4}
 \end{equation}
 \begin{equation}
-I_{disk+ring}=\frac{0,11963kg\cdot0,0475^2m}{2}+\frac{0,455726kg\cdot(0,027^2m+0,0385^2m)}{2}=
+\begin{aligned}
+I_{disk+ring} &=
+\frac{0,11963kg\cdot0,0475^2m}{2} \\
+&+ \frac{0,455726kg\cdot(0,027^2m+0,0385^2m)}{2}
+=6,388kgm^2\cdot10^{-4}
+\end{aligned}
 \end{equation}
-\\\\
+
 Before calculating the kinetic energy and the angular momentum, the agular moment has t be calculated, to calculate with the paralell theorem the mean displacement are used (6,4mm). 
 \begin{equation}
-I_{before}=\frac{0,11963kg\cdot0,0475^2m}{2}=   
+I_{before}=\frac{0,11963kg\cdot0,0475^2m}{2}=1,548kgm^2\cdot10^{-4}   
 \end{equation}
 \begin{equation}
-I_{after}=\frac{0,11963kg\cdot0,0475^2m}{2}+\frac{0,455726kg\cdot(0,027^2m+0,0385^2m)}{2}+\frac{0,19963kg\cdot0,0064^2m}{2}=
+    \begin{aligned}
+I_{after}=\frac{0,11963kg\cdot0,0475^2m}{2}+\frac{0,455726kg\cdot(0,027^2m+0,0385^2m)}{2}+\\\frac{0,19963kg\cdot0,0064^2m}{2}=6,429kgm^2\cdot10^{-4}
+    \end{aligned}
 \end{equation}
 
 To calculate and compare the Kineticenergy before and after the impact equation: \eqref{Erot} are used 
 \begin{equation}
-E_{disk}=\frac{17,53\frac{m}{s}\cdot I}{2}
+E_{disk}=\frac{17,53\frac{rad}{s}\cdot 1,548\cdot10^{-4}kgm^2}{2}=0,001356kgm^2/s^2
 \end{equation}
 
 \begin{equation}
-E_{disk+ring}=\frac{4,095\frac{m}{s}\cdot I}{2}
+E_{disk+ring}=\frac{4,095\frac{rad}{s}\cdot 6,429\cdot10^{-4}kgm^2}{2}=0,001316kgm^2/s^2
 \end{equation}
 
 
 To calculate and compare the angular momentum before and after the impact equation: \eqref{L} are used
 \begin{equation}
-L_{disk}=I\cdot17,53
+L_{disk}=1,548\cdot10^{-4}kgm^2\cdot17,53rad/s
 \end{equation}
 
 \begin{equation}
-L_{disk+ring}=I\cdot4,095
+L_{disk+ring}=6,429\cdot10^{-4}kgm^2\cdot4,095rad/s
+\end{equation}
+
+To compare the before and after impact the procentual change are calculated 
+
+\begin{equation}
+L_\%=\frac{L_e-L_f}{L_f}\cdot100=
+\end{equation}
+
+\begin{equation}
+K_\%=\frac{K_e-K_f}{K_f}\cdot100=
 \end{equation}
 
 
