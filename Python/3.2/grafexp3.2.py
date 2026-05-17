@@ -10,11 +10,11 @@ Y_COLUMN = "Angular Velocity (rad/s)"
 
 EXPERIMENT_NAME = Path(__file__).parent.name
 TIME_INTERVALS = {
-    "3.2_run_11": (0.75, 1.35),
-    "3.2_run_12": (0.75, 1.35),
-    "3.2_run_13": (0.75, 1.35),
-    "3.2_run_14": (0.75, 1.35),
-    "3.2_run_15": (0.75, 1.35),
+    "3.2_run_11": (0.75, 5),
+    "3.2_run_12": (0.75, 5),
+    "3.2_run_13": (0.75, 5),
+    "3.2_run_14": (0.75, 5),
+    "3.2_run_15": (0.75, 5),
 }
 
 CSV_FILES = sorted(Path(__file__).parent.glob(f"{EXPERIMENT_NAME}_run_*.csv"))
