@@ -10,6 +10,7 @@
 \usepackage{tikz}
 \usepackage{comment}
 \usepackage[backend=biber]{biblatex}
+\usepackage{caption}
 
 \addbibresource{references.bib.txt}
 
@@ -46,11 +47,11 @@ förklaringar av metoden som används.
 \end{comment}
 Moment of inertia is a physical property of anything which rotates, characterized by the resistance
 to changes in angular velocity. Since this affects how much force needs to be applied to accelerate or
-decelerate objects, knowing how to calculate and measure it is crucial for many applications. In this study experimental 
-means of measuring the moment of inertia practically were explored and compared with theoretical values expexted in perfect 
-conditions. The aim was to determine if this was a valid means of measuring the moment of inertia and how accurate of a method 
-it was compared to theoretical calculations. A second goal of the experiment was to determine the effect of impulse on a 
-rotating system to show with a practical example that angular momentum is conserved in such systems, while rotational kinetic energy is not.
+decelerate objects, knowing how to calculate and measure it is crucial for many applications. In this study several
+means of measuring the moment of inertia practically were explored and compared with theoretical values. The aim was
+to determine if this was a valid means of measuring the moment of inertia and how accurate of a method it was. 
+A second goal of the experiment was to determine the effect of impulse on a rotating system to show
+with a practical example that angular momentum is conserved in systems like this while angular kinetic energy is not.
 \newpage
 
 \section{Theory/Background}
@@ -227,13 +228,18 @@ uppsugningstestet. Tabell 1 visar uppsugningshastigheterna för tvättsvamparna 
 Tänkte tillägga lite innan datan som bara förklarar hur datan presenteras.
 - AP
 \end{comment}
-Below is a table showing direct measurements of the relevant properties of the experiment setup for calculating
-the moment of inertia. Masses were measured with scales and distances and lengths with calipers. 
-
+The results in Tabel \ref{tab:ringdisk} are showing direct measurements of the relevant properties of the experiment setup for calculating
+the moment of inertia for the ring and disk eperiments.\\  
+Table \ref{tab:exp1} and \ref{tab:exp2} shows the experimental data for the experimental calculations for the moment of inertia. \\
+Table \ref{tab:standard-dev1} and \ref{tab:standard-dev2} are showing the meanvalues and standard deviation for the two experiments.\\ 
+Figures \ref{fig:disk} to \ref{fig:aftercollision} are showing the plotted data exported from the CASPECO software for the experiments. 
+Note that the scales on the axes are not the same between the figures.
 
 
 \begin{table}[H]
 \centering
+\caption{Measurements for ring, disk and attachment point}
+\label{tab:ringdisk}
 \begin{tabular}{c c c c}
 \hline
 Entity & Value  & Unit \\
@@ -247,12 +253,13 @@ $r_{ring\: inside}$ & 38,5 & mm &\\
 $r_{attachment\: point}$ & 23,75& mm& \\
 \hline
 \end{tabular}
-\caption{Measurements for ring, disk and attachment point}
+
 \label{tab:värden}
 \end{table}
 
 \begin{table}[H]
 \centering
+\caption{Data points for experiment 1}
 \begin{tabular}{c c c c}
 \hline
  & Disk($rad/s^2$)  & Disk+ring($rad/s^2$) \\
@@ -266,13 +273,14 @@ $M_\alpha$& 14,04 & 3,022 &\\
 $S_\alpha$ & 0,089& 0,0238& \\
 \hline
 \end{tabular}
-\caption{Data points for experiment 1}
+
 \label{tab:exp1}
 \end{table}
 
 
 \begin{table}[H]
 \centering
+\caption{Data points for experiment 2}
 \begin{tabular}{c c c c}
 \hline
  & Disk($rad/s$)  & Disk+ring($rad/s$)& Displacement(mm) \\
@@ -286,7 +294,6 @@ $M_\omega$& 17,53 & 4,095 &6,4\\
 $S_\omega$ & 2,336& 0,498& \\
 \hline
 \end{tabular}
-\caption{Data points for experiment 2}
 \label{tab:exp2}
 \end{table}
 \begin{comment}
@@ -310,34 +317,32 @@ Föreslår "slope", k-value är visserligen inte fel, men inte lika vanligt uttr
 
 \newpage
 
-\noindent Listed below is the plotted data exported from the CASPECO software showing the experiments. Note that the scales on the axes are not the same between the figures.
-
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{disk.png}
     \caption{Graph from the experiment used to determine the moment of inertia of a disk. The k-value gives the angular acceleration.}
+    \includegraphics[width=0.8\textwidth]{disk.png} 
     \label{fig:disk}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{diskring.png}
     \caption{Graph from the experiment used to determine the moment of inertia of a disk with added weight. The k-value gives the angular acceleration.}
+    \includegraphics[width=0.8\textwidth]{diskring.png}
     \label{fig:diskring}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{beforecolision.png}
     \caption{Graph showing the angular speed before impact of the added weight. The k-value gives the angular acceleration.}
+    \includegraphics[width=0.8\textwidth]{beforecolision.png}
     \label{fig:beforecollision}
 \end{figure}
 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{aftercolision.png}
     \caption{Graph showing the angular speed after impact of the added weight. The k-value gives the angular acceleration.}
+    \includegraphics[width=0.8\textwidth]{aftercolision.png}
     \label{fig:aftercollision}
 \end{figure}
 \begin{comment}
@@ -348,6 +353,7 @@ epreriment 3 före kolision(medel 17,53 S-avikelse 2,336) efter kolision(medel 4
 
 \begin{table}[H]
 \centering
+\caption{Standard deviation calculated according to equation: \eqref{deviat}}
 \begin{tabular}{c c c c}
 \hline
 Experiment & Mean($\alpha$)  & Standard deviation \\
@@ -356,12 +362,12 @@ $Experimental \:I_{disk}$ & 14,04 & 0,089 &\\
 $Experimental \:I_{disk+ring}$ & 3,022 & 0,0238 &\\
 \hline
 \end{tabular}
-\caption{Standard deviation calculated according to equation: \eqref{deviat}}
 \label{tab:standard-dev1}
 \end{table}
 
 \begin{table}[H]
 \centering
+\caption{Standard deviation calculated according to equation: \eqref{deviat}}
 \begin{tabular}{c c c c}
 \hline
 Experiment & Mean($\omega$)  & Standard deviation \\
@@ -370,14 +376,11 @@ $Experimental \:L/K_{pre-impact}$ & 17,53 & 2,336 &\\
 $Experimental \:L/K_{post-impact}$ & 4,095 & 0,498 &\\
 \hline
 \end{tabular}
-\caption{Standard deviation calculated according to equation: \eqref{deviat}}
 \label{tab:standard-dev2}
 \end{table}
 
 
-\newpage
 
-\section{Calculations}
 \begin{comment}
 ska vi ha en egen rubrik för beräkningar eller lägga dem i results 
 \end{comment}
@@ -385,52 +388,71 @@ Using equation:\eqref{finalderivation} the experimental moment of inertia can be
 only knowing the mass of the falling weight and the radius of the pulling disk.
 
 \begin{equation}
-I_{disk}=\frac{0,00966kg\cdot9,81\frac{rad}{s^2}\cdot0,02375m}{14,04\frac{rad}{s^2}}-0,00966\cdot0,02375m^2=1,548kgm^2\cdot10^{-4}
+% I_{disk}=\frac{0,00966kg\cdot9,81\frac{rad}{s^2}\cdot0,02375m}{14,04\frac{rad}{s^2}}-0,00966\cdot0,02375m^2=
+I_{disk}=1,548kgm^2\cdot10^{-4}
 \end{equation}
 \begin{equation}
-I_{disk+ring}=\frac{0,00966kg\cdot9,81\frac{rad}{s^2}\cdot0,02375m}{3,022\frac{rad}{s^2}}-0,00966\cdot0,02375m^2=7,393kgm^2\cdot10^{-4}
+I_{disk+ring}=
+%\frac{0,00966kg\cdot9,81\frac{rad}{s^2}\cdot0,02375m}{3,022\frac{rad}{s^2}}-0,00966\cdot0,02375m^2=
+7,393kgm^2\cdot10^{-4}
 \end{equation}
 
 To calculate the theoretical values for the disk equation: \eqref{Iplate} is used and for the disk and the ring it is combined with equation:\eqref{Iring} 
 \begin{equation}
-I_{disk}=\frac{0,11963kg\cdot0,0475^2m}{2}=1,349kgm^2\cdot10^{-4}
+I_{disk}=
+%\frac{0,11963kg\cdot0,0475^2m}{2}
+=1,349kgm^2\cdot10^{-4}
 \end{equation}
 \begin{equation}
 \begin{aligned}
 I_{disk+ring} &=
-\frac{0,11963kg\cdot0,0475^2m}{2} \\
-&+ \frac{0,455726kg\cdot(0,027^2m+0,0385^2m)}{2}
+%\frac{0,11963kg\cdot0,0475^2m}{2} \\
+%&+ \frac{0,455726kg\cdot(0,027^2m+0,0385^2m)}{2}
 =6,388kgm^2\cdot10^{-4}
 \end{aligned}
 \end{equation}
 
 Before calculating the kinetic energy and the angular momentum, the angular moment has to be calculated, to calculate with the parallel theorem the mean displacement is used (6,4mm). 
 \begin{equation}
-I_{before}=\frac{0,11963kg\cdot0,0475^2m}{2}=1,548kgm^2\cdot10^{-4}   
+I_{before}=
+%\frac{0,11963kg\cdot0,0475^2m}{2}=
+1,548kgm^2\cdot10^{-4}   
 \end{equation}
 \begin{equation}
     \begin{aligned}
-I_{after}=\frac{0,11963kg\cdot0,0475^2m}{2}+\frac{0,455726kg\cdot(0,027^2m+0,0385^2m)}{2}+\\\frac{0,19963kg\cdot0,0064^2m}{2}=6,429kgm^2\cdot10^{-4}
+I_{after}=
+%\frac{0,11963kg\cdot0,0475^2m}{2}+\frac{0,455726kg\cdot(0,027^2m+0,0385^2m)}{2}+\\\frac{0,19963kg\cdot0,0064^2m}{2}=
+6,429kgm^2\cdot10^{-4}
     \end{aligned}
 \end{equation}
 
 To calculate and compare the kinetic energy before and after the impact equation: \eqref{Erot} is used 
 \begin{equation}
-E_{disk}=\frac{17,53\frac{rad}{s}\cdot 1,548\cdot10^{-4}kgm^2}{2}=0,001356kgm^2/s^2
+E_{disk}=
+%\frac{17,53\frac{rad}{s}\cdot 1,548\cdot10^{-4}kgm^2}{2}=
+0,001356kgm^2/s^2
 \end{equation}
 
 \begin{equation}
-E_{disk+ring}=\frac{4,095\frac{rad}{s}\cdot 6,429\cdot10^{-4}kgm^2}{2}=0,001316kgm^2/s^2
+E_{disk+ring}=
+%\frac{4,095\frac{rad}{s}\cdot 6,429\cdot10^{-4}kgm^2}{2}=
+0,001316kgm^2/s^2
 \end{equation}
+
+\newpage
 
 
 To calculate and compare the angular momentum before and after the impact equation: \eqref{L} is used
 \begin{equation}
-L_{disk}=1,548\cdot10^{-4}kgm^2\cdot17,53rad/s=0,002713Kgm^2/s
+L_{disk}=
+%1,548\cdot10^{-4}kgm^2\cdot17,53rad/s=
+0,002713Kgm^2/s
 \end{equation}
 
 \begin{equation}
-L_{disk+ring}=6,429\cdot10^{-4}kgm^2\cdot4,095rad/s=0,002632kgm^2/s
+L_{disk+ring}=
+%6,429\cdot10^{-4}kgm^2\cdot4,095rad/s=
+0,002632kgm^2/s
 \end{equation}
 
 To compare the before and after impact the percentage change is calculated 
@@ -527,7 +549,6 @@ kemikalierna hade en liten annan färg än vad den borde ha haft. Då kan man l�
 kemikalien i bilagan och hänvisa till den i texten. Läsaren måste inte se bilden, men det kan vara bra
 att ha som bilaga om någon är intresserad.
 \end{comment}
-\section{contributions}
 
 
 \end{document}
